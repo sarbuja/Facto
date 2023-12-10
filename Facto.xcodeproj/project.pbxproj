@@ -1,0 +1,885 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		83BB10A52B2661A100D0DC10 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83BB10A42B2661A100D0DC10 /* Preview Assets.xcassets */; };
+		83BB10A62B2661CA00D0DC10 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB10272B265EC200D0DC10 /* AppSettings.swift */; };
+		83BB10A72B2661F600D0DC10 /* not-found-lottie.json in Resources */ = {isa = PBXBuildFile; fileRef = 83BB102B2B265EC200D0DC10 /* not-found-lottie.json */; };
+		83BB10A82B2661F600D0DC10 /* bulb-lottie.json in Resources */ = {isa = PBXBuildFile; fileRef = 83BB10292B265EC200D0DC10 /* bulb-lottie.json */; };
+		83BB10A92B2661F600D0DC10 /* love-lottie.json in Resources */ = {isa = PBXBuildFile; fileRef = 83BB102A2B265EC200D0DC10 /* love-lottie.json */; };
+		83BB10AA2B26620F00D0DC10 /* FactoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB10352B265EC200D0DC10 /* FactoApp.swift */; };
+		83BB10AB2B26621300D0DC10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83BB102C2B265EC200D0DC10 /* Assets.xcassets */; };
+		83BB10AC2B26626000D0DC10 /* ColorScheme+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB10322B265EC200D0DC10 /* ColorScheme+Extensions.swift */; };
+		83BB10AD2B26626000D0DC10 /* CustomViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB10342B265EC200D0DC10 /* CustomViewModifiers.swift */; };
+		83BB10AE2B26626000D0DC10 /* CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB10312B265EC200D0DC10 /* CustomColor.swift */; };
+		83BB10AF2B26626000D0DC10 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB10332B265EC200D0DC10 /* LottieView.swift */; };
+		83BB10B02B26626000D0DC10 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB10302B265EC200D0DC10 /* ViewExtensions.swift */; };
+		83BB10B12B26627700D0DC10 /* FavouritesButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB10572B265EC200D0DC10 /* FavouritesButton.swift */; };
+		83BB10B22B26627700D0DC10 /* ColorModeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB10552B265EC200D0DC10 /* ColorModeButton.swift */; };
+		83BB10B32B26627700D0DC10 /* LoveFactButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB10532B265EC200D0DC10 /* LoveFactButton.swift */; };
+		83BB10B42B26627700D0DC10 /* FavouritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB10542B265EC200D0DC10 /* FavouritesView.swift */; };
+		83BB10B52B26627700D0DC10 /* FactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB10562B265EC200D0DC10 /* FactView.swift */; };
+		83BB10B62B26627700D0DC10 /* NextFactButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB10582B265EC200D0DC10 /* NextFactButton.swift */; };
+		83BB10B72B26627C00D0DC10 /* FavouritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB10512B265EC200D0DC10 /* FavouritesViewModel.swift */; };
+		83BB10B82B26627C00D0DC10 /* FactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB10502B265EC200D0DC10 /* FactViewModel.swift */; };
+		83BB10B92B26628200D0DC10 /* Fact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB10452B265EC200D0DC10 /* Fact.swift */; };
+		83BB10BA2B26628700D0DC10 /* GetFactRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB10482B265EC200D0DC10 /* GetFactRepository.swift */; };
+		83BB10BB2B26628700D0DC10 /* SaveFactRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB10472B265EC200D0DC10 /* SaveFactRepository.swift */; };
+		83BB10BC2B26628700D0DC10 /* DeleteFactRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB10492B265EC200D0DC10 /* DeleteFactRepository.swift */; };
+		83BB10BD2B26628B00D0DC10 /* GetFactUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB104D2B265EC200D0DC10 /* GetFactUseCase.swift */; };
+		83BB10BE2B26628B00D0DC10 /* SaveFactUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB104C2B265EC200D0DC10 /* SaveFactUseCase.swift */; };
+		83BB10BF2B26628B00D0DC10 /* DeleteFactUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB104B2B265EC200D0DC10 /* DeleteFactUseCase.swift */; };
+		83BB10C02B26629800D0DC10 /* FavouritesLocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB10372B265EC200D0DC10 /* FavouritesLocalStore.swift */; };
+		83BB10C12B26629800D0DC10 /* FactDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB10382B265EC200D0DC10 /* FactDTO.swift */; };
+		83BB10C22B26629F00D0DC10 /* FactRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB103A2B265EC200D0DC10 /* FactRepositoryImplementation.swift */; };
+		83BB10C32B2662A400D0DC10 /* LocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB103C2B265EC200D0DC10 /* LocalStore.swift */; };
+		83BB10C42B2662A800D0DC10 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB10412B265EC200D0DC10 /* NetworkRequest.swift */; };
+		83BB10C52B2662A800D0DC10 /* URLSessionHttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB103F2B265EC200D0DC10 /* URLSessionHttpClient.swift */; };
+		83BB10C62B2662A800D0DC10 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB10402B265EC200D0DC10 /* HttpClient.swift */; };
+		83BB10C72B2662A800D0DC10 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB10422B265EC200D0DC10 /* NetworkError.swift */; };
+		83BB10C82B2662A800D0DC10 /* FactService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB103E2B265EC200D0DC10 /* FactService.swift */; };
+		83BB10D22B2662F500D0DC10 /* FactViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB105C2B265F1000D0DC10 /* FactViewModelTests.swift */; };
+		83BB10D32B2662F500D0DC10 /* SaveFactUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB105E2B265F1000D0DC10 /* SaveFactUseCaseTest.swift */; };
+		83BB10D42B2662F500D0DC10 /* LocalStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB10612B265F1000D0DC10 /* LocalStorageTests.swift */; };
+		83BB10D52B2662F500D0DC10 /* GetFactUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB10632B265F1000D0DC10 /* GetFactUseCaseTest.swift */; };
+		83BB10D62B2662F500D0DC10 /* DeleteFactUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB10622B265F1000D0DC10 /* DeleteFactUseCaseTest.swift */; };
+		83BB10D72B2662F500D0DC10 /* FactRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB105B2B265F1000D0DC10 /* FactRepositoryTest.swift */; };
+		83BB10D82B2662F500D0DC10 /* HttpClientTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB105D2B265F1000D0DC10 /* HttpClientTest.swift */; };
+		83BB10D92B2662F500D0DC10 /* FactResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 83BB105F2B265F1000D0DC10 /* FactResponse.json */; };
+		83BB10DA2B2662F500D0DC10 /* XCTest+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB10602B265F1000D0DC10 /* XCTest+Extension.swift */; };
+		83BB10DB2B2662FC00D0DC10 /* FactoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB10662B265F1000D0DC10 /* FactoUITestsLaunchTests.swift */; };
+		83BB10DC2B2662FC00D0DC10 /* FactoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB10652B265F1000D0DC10 /* FactoUITests.swift */; };
+		83BECBA729C85F720053ECE0 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 83BECBA629C85F720053ECE0 /* Lottie */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		832760472986E54F00DB56B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8327602E2986E54D00DB56B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 832760352986E54D00DB56B7;
+			remoteInfo = TimePass;
+		};
+		832760512986E54F00DB56B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8327602E2986E54D00DB56B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 832760352986E54D00DB56B7;
+			remoteInfo = TimePass;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		832760362986E54D00DB56B7 /* Facto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Facto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		832760462986E54F00DB56B7 /* FactoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FactoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		832760502986E54F00DB56B7 /* FactoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FactoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		83BB10272B265EC200D0DC10 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		83BB10292B265EC200D0DC10 /* bulb-lottie.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "bulb-lottie.json"; sourceTree = "<group>"; };
+		83BB102A2B265EC200D0DC10 /* love-lottie.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "love-lottie.json"; sourceTree = "<group>"; };
+		83BB102B2B265EC200D0DC10 /* not-found-lottie.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "not-found-lottie.json"; sourceTree = "<group>"; };
+		83BB102C2B265EC200D0DC10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		83BB10302B265EC200D0DC10 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
+		83BB10312B265EC200D0DC10 /* CustomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColor.swift; sourceTree = "<group>"; };
+		83BB10322B265EC200D0DC10 /* ColorScheme+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ColorScheme+Extensions.swift"; sourceTree = "<group>"; };
+		83BB10332B265EC200D0DC10 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		83BB10342B265EC200D0DC10 /* CustomViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewModifiers.swift; sourceTree = "<group>"; };
+		83BB10352B265EC200D0DC10 /* FactoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoApp.swift; sourceTree = "<group>"; };
+		83BB10372B265EC200D0DC10 /* FavouritesLocalStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesLocalStore.swift; sourceTree = "<group>"; };
+		83BB10382B265EC200D0DC10 /* FactDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactDTO.swift; sourceTree = "<group>"; };
+		83BB103A2B265EC200D0DC10 /* FactRepositoryImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactRepositoryImplementation.swift; sourceTree = "<group>"; };
+		83BB103C2B265EC200D0DC10 /* LocalStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStore.swift; sourceTree = "<group>"; };
+		83BB103E2B265EC200D0DC10 /* FactService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactService.swift; sourceTree = "<group>"; };
+		83BB103F2B265EC200D0DC10 /* URLSessionHttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHttpClient.swift; sourceTree = "<group>"; };
+		83BB10402B265EC200D0DC10 /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		83BB10412B265EC200D0DC10 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		83BB10422B265EC200D0DC10 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		83BB10452B265EC200D0DC10 /* Fact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fact.swift; sourceTree = "<group>"; };
+		83BB10472B265EC200D0DC10 /* SaveFactRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveFactRepository.swift; sourceTree = "<group>"; };
+		83BB10482B265EC200D0DC10 /* GetFactRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFactRepository.swift; sourceTree = "<group>"; };
+		83BB10492B265EC200D0DC10 /* DeleteFactRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteFactRepository.swift; sourceTree = "<group>"; };
+		83BB104B2B265EC200D0DC10 /* DeleteFactUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteFactUseCase.swift; sourceTree = "<group>"; };
+		83BB104C2B265EC200D0DC10 /* SaveFactUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveFactUseCase.swift; sourceTree = "<group>"; };
+		83BB104D2B265EC200D0DC10 /* GetFactUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFactUseCase.swift; sourceTree = "<group>"; };
+		83BB10502B265EC200D0DC10 /* FactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactViewModel.swift; sourceTree = "<group>"; };
+		83BB10512B265EC200D0DC10 /* FavouritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewModel.swift; sourceTree = "<group>"; };
+		83BB10532B265EC200D0DC10 /* LoveFactButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoveFactButton.swift; sourceTree = "<group>"; };
+		83BB10542B265EC200D0DC10 /* FavouritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesView.swift; sourceTree = "<group>"; };
+		83BB10552B265EC200D0DC10 /* ColorModeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorModeButton.swift; sourceTree = "<group>"; };
+		83BB10562B265EC200D0DC10 /* FactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactView.swift; sourceTree = "<group>"; };
+		83BB10572B265EC200D0DC10 /* FavouritesButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesButton.swift; sourceTree = "<group>"; };
+		83BB10582B265EC200D0DC10 /* NextFactButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextFactButton.swift; sourceTree = "<group>"; };
+		83BB10592B265EC200D0DC10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83BB105B2B265F1000D0DC10 /* FactRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactRepositoryTest.swift; sourceTree = "<group>"; };
+		83BB105C2B265F1000D0DC10 /* FactViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactViewModelTests.swift; sourceTree = "<group>"; };
+		83BB105D2B265F1000D0DC10 /* HttpClientTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientTest.swift; sourceTree = "<group>"; };
+		83BB105E2B265F1000D0DC10 /* SaveFactUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveFactUseCaseTest.swift; sourceTree = "<group>"; };
+		83BB105F2B265F1000D0DC10 /* FactResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FactResponse.json; sourceTree = "<group>"; };
+		83BB10602B265F1000D0DC10 /* XCTest+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTest+Extension.swift"; sourceTree = "<group>"; };
+		83BB10612B265F1000D0DC10 /* LocalStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageTests.swift; sourceTree = "<group>"; };
+		83BB10622B265F1000D0DC10 /* DeleteFactUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteFactUseCaseTest.swift; sourceTree = "<group>"; };
+		83BB10632B265F1000D0DC10 /* GetFactUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFactUseCaseTest.swift; sourceTree = "<group>"; };
+		83BB10652B265F1000D0DC10 /* FactoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoUITests.swift; sourceTree = "<group>"; };
+		83BB10662B265F1000D0DC10 /* FactoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		83BB10A42B2661A100D0DC10 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		832760332986E54D00DB56B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83BECBA729C85F720053ECE0 /* Lottie in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		832760432986E54F00DB56B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8327604D2986E54F00DB56B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8327602D2986E54D00DB56B7 = {
+			isa = PBXGroup;
+			children = (
+				83BB10262B265EC200D0DC10 /* Facto */,
+				83BB105A2B265F1000D0DC10 /* FactoTests */,
+				83BB10642B265F1000D0DC10 /* FactoUITests */,
+				832760372986E54D00DB56B7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		832760372986E54D00DB56B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				832760362986E54D00DB56B7 /* Facto.app */,
+				832760462986E54F00DB56B7 /* FactoTests.xctest */,
+				832760502986E54F00DB56B7 /* FactoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83BB10262B265EC200D0DC10 /* Facto */ = {
+			isa = PBXGroup;
+			children = (
+				83BB102C2B265EC200D0DC10 /* Assets.xcassets */,
+				83BB10592B265EC200D0DC10 /* Info.plist */,
+				83BB10352B265EC200D0DC10 /* FactoApp.swift */,
+				83BB10272B265EC200D0DC10 /* AppSettings.swift */,
+				83BB10362B265EC200D0DC10 /* Data */,
+				83BB10432B265EC200D0DC10 /* Domain */,
+				83BB104E2B265EC200D0DC10 /* Presentation */,
+				83BB10282B265EC200D0DC10 /* Resources */,
+				83BB102F2B265EC200D0DC10 /* Utilities */,
+				83BB10A32B2661A100D0DC10 /* Preview Content */,
+			);
+			path = Facto;
+			sourceTree = "<group>";
+		};
+		83BB10282B265EC200D0DC10 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				83BB10292B265EC200D0DC10 /* bulb-lottie.json */,
+				83BB102A2B265EC200D0DC10 /* love-lottie.json */,
+				83BB102B2B265EC200D0DC10 /* not-found-lottie.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		83BB102F2B265EC200D0DC10 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				83BB10302B265EC200D0DC10 /* ViewExtensions.swift */,
+				83BB10312B265EC200D0DC10 /* CustomColor.swift */,
+				83BB10322B265EC200D0DC10 /* ColorScheme+Extensions.swift */,
+				83BB10332B265EC200D0DC10 /* LottieView.swift */,
+				83BB10342B265EC200D0DC10 /* CustomViewModifiers.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		83BB10362B265EC200D0DC10 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				83BB10372B265EC200D0DC10 /* FavouritesLocalStore.swift */,
+				83BB10382B265EC200D0DC10 /* FactDTO.swift */,
+				83BB10392B265EC200D0DC10 /* RepositoryImplementations */,
+				83BB103B2B265EC200D0DC10 /* Protocols */,
+				83BB103D2B265EC200D0DC10 /* Services */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		83BB10392B265EC200D0DC10 /* RepositoryImplementations */ = {
+			isa = PBXGroup;
+			children = (
+				83BB103A2B265EC200D0DC10 /* FactRepositoryImplementation.swift */,
+			);
+			path = RepositoryImplementations;
+			sourceTree = "<group>";
+		};
+		83BB103B2B265EC200D0DC10 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				83BB103C2B265EC200D0DC10 /* LocalStore.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		83BB103D2B265EC200D0DC10 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				83BB103E2B265EC200D0DC10 /* FactService.swift */,
+				83BB103F2B265EC200D0DC10 /* URLSessionHttpClient.swift */,
+				83BB10402B265EC200D0DC10 /* HttpClient.swift */,
+				83BB10412B265EC200D0DC10 /* NetworkRequest.swift */,
+				83BB10422B265EC200D0DC10 /* NetworkError.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		83BB10432B265EC200D0DC10 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				83BB10442B265EC200D0DC10 /* Models */,
+				83BB10462B265EC200D0DC10 /* RepositoryInterfaces */,
+				83BB104A2B265EC200D0DC10 /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		83BB10442B265EC200D0DC10 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				83BB10452B265EC200D0DC10 /* Fact.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		83BB10462B265EC200D0DC10 /* RepositoryInterfaces */ = {
+			isa = PBXGroup;
+			children = (
+				83BB10472B265EC200D0DC10 /* SaveFactRepository.swift */,
+				83BB10482B265EC200D0DC10 /* GetFactRepository.swift */,
+				83BB10492B265EC200D0DC10 /* DeleteFactRepository.swift */,
+			);
+			path = RepositoryInterfaces;
+			sourceTree = "<group>";
+		};
+		83BB104A2B265EC200D0DC10 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				83BB104B2B265EC200D0DC10 /* DeleteFactUseCase.swift */,
+				83BB104C2B265EC200D0DC10 /* SaveFactUseCase.swift */,
+				83BB104D2B265EC200D0DC10 /* GetFactUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		83BB104E2B265EC200D0DC10 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				83BB104F2B265EC200D0DC10 /* ViewModels */,
+				83BB10522B265EC200D0DC10 /* Views */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		83BB104F2B265EC200D0DC10 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				83BB10502B265EC200D0DC10 /* FactViewModel.swift */,
+				83BB10512B265EC200D0DC10 /* FavouritesViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		83BB10522B265EC200D0DC10 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				83BB10532B265EC200D0DC10 /* LoveFactButton.swift */,
+				83BB10542B265EC200D0DC10 /* FavouritesView.swift */,
+				83BB10552B265EC200D0DC10 /* ColorModeButton.swift */,
+				83BB10562B265EC200D0DC10 /* FactView.swift */,
+				83BB10572B265EC200D0DC10 /* FavouritesButton.swift */,
+				83BB10582B265EC200D0DC10 /* NextFactButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		83BB105A2B265F1000D0DC10 /* FactoTests */ = {
+			isa = PBXGroup;
+			children = (
+				83BB105B2B265F1000D0DC10 /* FactRepositoryTest.swift */,
+				83BB105C2B265F1000D0DC10 /* FactViewModelTests.swift */,
+				83BB105D2B265F1000D0DC10 /* HttpClientTest.swift */,
+				83BB105E2B265F1000D0DC10 /* SaveFactUseCaseTest.swift */,
+				83BB105F2B265F1000D0DC10 /* FactResponse.json */,
+				83BB10602B265F1000D0DC10 /* XCTest+Extension.swift */,
+				83BB10612B265F1000D0DC10 /* LocalStorageTests.swift */,
+				83BB10622B265F1000D0DC10 /* DeleteFactUseCaseTest.swift */,
+				83BB10632B265F1000D0DC10 /* GetFactUseCaseTest.swift */,
+			);
+			path = FactoTests;
+			sourceTree = "<group>";
+		};
+		83BB10642B265F1000D0DC10 /* FactoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				83BB10652B265F1000D0DC10 /* FactoUITests.swift */,
+				83BB10662B265F1000D0DC10 /* FactoUITestsLaunchTests.swift */,
+			);
+			path = FactoUITests;
+			sourceTree = "<group>";
+		};
+		83BB10A32B2661A100D0DC10 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				83BB10A42B2661A100D0DC10 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		832760352986E54D00DB56B7 /* Facto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8327605A2986E54F00DB56B7 /* Build configuration list for PBXNativeTarget "Facto" */;
+			buildPhases = (
+				832760322986E54D00DB56B7 /* Sources */,
+				832760332986E54D00DB56B7 /* Frameworks */,
+				832760342986E54D00DB56B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Facto;
+			packageProductDependencies = (
+				83BECBA629C85F720053ECE0 /* Lottie */,
+			);
+			productName = TimePass;
+			productReference = 832760362986E54D00DB56B7 /* Facto.app */;
+			productType = "com.apple.product-type.application";
+		};
+		832760452986E54F00DB56B7 /* FactoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8327605D2986E54F00DB56B7 /* Build configuration list for PBXNativeTarget "FactoTests" */;
+			buildPhases = (
+				832760422986E54F00DB56B7 /* Sources */,
+				832760432986E54F00DB56B7 /* Frameworks */,
+				832760442986E54F00DB56B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				832760482986E54F00DB56B7 /* PBXTargetDependency */,
+			);
+			name = FactoTests;
+			productName = TimePassTests;
+			productReference = 832760462986E54F00DB56B7 /* FactoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8327604F2986E54F00DB56B7 /* FactoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 832760602986E54F00DB56B7 /* Build configuration list for PBXNativeTarget "FactoUITests" */;
+			buildPhases = (
+				8327604C2986E54F00DB56B7 /* Sources */,
+				8327604D2986E54F00DB56B7 /* Frameworks */,
+				8327604E2986E54F00DB56B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				832760522986E54F00DB56B7 /* PBXTargetDependency */,
+			);
+			name = FactoUITests;
+			productName = TimePassUITests;
+			productReference = 832760502986E54F00DB56B7 /* FactoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8327602E2986E54D00DB56B7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					832760352986E54D00DB56B7 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					832760452986E54F00DB56B7 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 832760352986E54D00DB56B7;
+					};
+					8327604F2986E54F00DB56B7 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 832760352986E54D00DB56B7;
+					};
+				};
+			};
+			buildConfigurationList = 832760312986E54D00DB56B7 /* Build configuration list for PBXProject "Facto" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8327602D2986E54D00DB56B7;
+			packageReferences = (
+				83BECBA529C85F720053ECE0 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
+			productRefGroup = 832760372986E54D00DB56B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				832760352986E54D00DB56B7 /* Facto */,
+				832760452986E54F00DB56B7 /* FactoTests */,
+				8327604F2986E54F00DB56B7 /* FactoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		832760342986E54D00DB56B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83BB10A72B2661F600D0DC10 /* not-found-lottie.json in Resources */,
+				83BB10A52B2661A100D0DC10 /* Preview Assets.xcassets in Resources */,
+				83BB10A82B2661F600D0DC10 /* bulb-lottie.json in Resources */,
+				83BB10AB2B26621300D0DC10 /* Assets.xcassets in Resources */,
+				83BB10A92B2661F600D0DC10 /* love-lottie.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		832760442986E54F00DB56B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83BB10D92B2662F500D0DC10 /* FactResponse.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8327604E2986E54F00DB56B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		832760322986E54D00DB56B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83BB10B22B26627700D0DC10 /* ColorModeButton.swift in Sources */,
+				83BB10AD2B26626000D0DC10 /* CustomViewModifiers.swift in Sources */,
+				83BB10C62B2662A800D0DC10 /* HttpClient.swift in Sources */,
+				83BB10BD2B26628B00D0DC10 /* GetFactUseCase.swift in Sources */,
+				83BB10C52B2662A800D0DC10 /* URLSessionHttpClient.swift in Sources */,
+				83BB10C32B2662A400D0DC10 /* LocalStore.swift in Sources */,
+				83BB10B02B26626000D0DC10 /* ViewExtensions.swift in Sources */,
+				83BB10BE2B26628B00D0DC10 /* SaveFactUseCase.swift in Sources */,
+				83BB10BC2B26628700D0DC10 /* DeleteFactRepository.swift in Sources */,
+				83BB10C72B2662A800D0DC10 /* NetworkError.swift in Sources */,
+				83BB10C02B26629800D0DC10 /* FavouritesLocalStore.swift in Sources */,
+				83BB10B92B26628200D0DC10 /* Fact.swift in Sources */,
+				83BB10B82B26627C00D0DC10 /* FactViewModel.swift in Sources */,
+				83BB10A62B2661CA00D0DC10 /* AppSettings.swift in Sources */,
+				83BB10BA2B26628700D0DC10 /* GetFactRepository.swift in Sources */,
+				83BB10B72B26627C00D0DC10 /* FavouritesViewModel.swift in Sources */,
+				83BB10C82B2662A800D0DC10 /* FactService.swift in Sources */,
+				83BB10BB2B26628700D0DC10 /* SaveFactRepository.swift in Sources */,
+				83BB10C12B26629800D0DC10 /* FactDTO.swift in Sources */,
+				83BB10C22B26629F00D0DC10 /* FactRepositoryImplementation.swift in Sources */,
+				83BB10AA2B26620F00D0DC10 /* FactoApp.swift in Sources */,
+				83BB10B42B26627700D0DC10 /* FavouritesView.swift in Sources */,
+				83BB10B52B26627700D0DC10 /* FactView.swift in Sources */,
+				83BB10AE2B26626000D0DC10 /* CustomColor.swift in Sources */,
+				83BB10B12B26627700D0DC10 /* FavouritesButton.swift in Sources */,
+				83BB10B32B26627700D0DC10 /* LoveFactButton.swift in Sources */,
+				83BB10AC2B26626000D0DC10 /* ColorScheme+Extensions.swift in Sources */,
+				83BB10AF2B26626000D0DC10 /* LottieView.swift in Sources */,
+				83BB10BF2B26628B00D0DC10 /* DeleteFactUseCase.swift in Sources */,
+				83BB10C42B2662A800D0DC10 /* NetworkRequest.swift in Sources */,
+				83BB10B62B26627700D0DC10 /* NextFactButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		832760422986E54F00DB56B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83BB10D62B2662F500D0DC10 /* DeleteFactUseCaseTest.swift in Sources */,
+				83BB10D32B2662F500D0DC10 /* SaveFactUseCaseTest.swift in Sources */,
+				83BB10D22B2662F500D0DC10 /* FactViewModelTests.swift in Sources */,
+				83BB10D52B2662F500D0DC10 /* GetFactUseCaseTest.swift in Sources */,
+				83BB10DA2B2662F500D0DC10 /* XCTest+Extension.swift in Sources */,
+				83BB10D42B2662F500D0DC10 /* LocalStorageTests.swift in Sources */,
+				83BB10D82B2662F500D0DC10 /* HttpClientTest.swift in Sources */,
+				83BB10D72B2662F500D0DC10 /* FactRepositoryTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8327604C2986E54F00DB56B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83BB10DB2B2662FC00D0DC10 /* FactoUITestsLaunchTests.swift in Sources */,
+				83BB10DC2B2662FC00D0DC10 /* FactoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		832760482986E54F00DB56B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 832760352986E54D00DB56B7 /* Facto */;
+			targetProxy = 832760472986E54F00DB56B7 /* PBXContainerItemProxy */;
+		};
+		832760522986E54F00DB56B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 832760352986E54D00DB56B7 /* Facto */;
+			targetProxy = 832760512986E54F00DB56B7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		832760582986E54F00DB56B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		832760592986E54F00DB56B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8327605B2986E54F00DB56B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Facto/Preview Content\"";
+				DEVELOPMENT_TEAM = 875PK3UBV5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Facto/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.santagurung.Facto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8327605C2986E54F00DB56B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Facto/Preview Content\"";
+				DEVELOPMENT_TEAM = 875PK3UBV5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Facto/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.santagurung.Facto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8327605E2986E54F00DB56B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 875PK3UBV5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.santagurung.TimePassTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Facto.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Facto";
+			};
+			name = Debug;
+		};
+		8327605F2986E54F00DB56B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 875PK3UBV5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.santagurung.TimePassTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Facto.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Facto";
+			};
+			name = Release;
+		};
+		832760612986E54F00DB56B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 875PK3UBV5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.santagurung.TimePassUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TimePass;
+			};
+			name = Debug;
+		};
+		832760622986E54F00DB56B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 875PK3UBV5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.santagurung.TimePassUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TimePass;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		832760312986E54D00DB56B7 /* Build configuration list for PBXProject "Facto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				832760582986E54F00DB56B7 /* Debug */,
+				832760592986E54F00DB56B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8327605A2986E54F00DB56B7 /* Build configuration list for PBXNativeTarget "Facto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8327605B2986E54F00DB56B7 /* Debug */,
+				8327605C2986E54F00DB56B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8327605D2986E54F00DB56B7 /* Build configuration list for PBXNativeTarget "FactoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8327605E2986E54F00DB56B7 /* Debug */,
+				8327605F2986E54F00DB56B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		832760602986E54F00DB56B7 /* Build configuration list for PBXNativeTarget "FactoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				832760612986E54F00DB56B7 /* Debug */,
+				832760622986E54F00DB56B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		83BECBA529C85F720053ECE0 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		83BECBA629C85F720053ECE0 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 83BECBA529C85F720053ECE0 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8327602E2986E54D00DB56B7 /* Project object */;
+}

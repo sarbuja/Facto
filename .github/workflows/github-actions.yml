@@ -1,7 +1,10 @@
+---
 name: Unit test workflow
 
 # Controls when the workflow will run
-on: [push, pull_request]
+on:
+  - push
+  - pull_request
 jobs:
   # This workflow contains a single job called "build"
   build:

@@ -11,9 +11,10 @@ A simple iOS SwiftUI App where we can go through random facts and favourite them
 
 # Architecture
 
-The project is following Clean Architecture where the components are assigned to 3 different modules. Domain, Data and Presentation. This can be reflected in the folder structure as seen in the screenshot below.
+The project is following Clean Architecture where the components are assigned to 3 different modules. Domain, Data and Presentation. A couple of screenshots for the app is shown below.
 
-![folders structure](folders.png)
+![home page](screenshot1.png)
+![favourites page](screenshot2.png)
 
 # External Frameworks
 

@@ -32,9 +32,3 @@ final class FavouritesViewModel: ObservableObject {
         }
     }
 }
-
-// MARK: - Previews
-
-final class PreviewsFavouritesViewModel: ObservableObject {
-    
-}

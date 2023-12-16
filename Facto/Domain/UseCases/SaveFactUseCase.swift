@@ -22,6 +22,6 @@ struct SaveToFavouritesUseCaseImplementation: SaveFactUseCase {
 struct PreviewSaveFactUseCase: SaveFactUseCase {
 
     func saveFactToFavourites(fact: Fact) throws {
-        
+        // NOT NEEDED FOR PREVIEW
     }
 }

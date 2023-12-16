@@ -1,4 +1,4 @@
-# TimePass
+# Facto
 
 A simple iOS SwiftUI App where we can go through random facts and favourite them. Favourited facts can be viewed offline too.
 

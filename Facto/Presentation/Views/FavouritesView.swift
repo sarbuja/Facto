@@ -23,10 +23,12 @@ struct FavouritesView: View {
             Group {
                 if let facts = viewModel.facts, facts.isEmpty {
                     VStack {
+                        Spacer()
                         Text("No favourites")
                             .font(.custom("AmericanTypewriter", size: 22))
                         LottieView(lottieFile: "not-found-lottie")
                             .frame(width: lottieViewSize, height: lottieViewSize)
+                        Spacer()
                     }
                 } else {
                     List {

@@ -4,7 +4,6 @@ final class FavouritesLocalStore {
 
     var storedFacts: [Fact]? {
         get {
-            print("file url: \(try! fileURL.absoluteString)")
             guard let data = try? Data(contentsOf: fileURL) else {
                 return []
             }
@@ -64,10 +63,10 @@ class PreviewsFavouriteStore: LocalStore {
                                 Fact(text: "The wheels on the bus go round and round.")]
 
     func addFactToFavourites(fact: Fact) throws {
-
+        // NOT NEEDED FOR PREVIEW
     }
 
     func removeFactFromFavourites(fact: Fact) throws {
-
+        // NOT NEEDED FOR PREVIEW
     }
 }

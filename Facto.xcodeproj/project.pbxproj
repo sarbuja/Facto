@@ -55,14 +55,6 @@
 		83BB10DB2B2662FC00D0DC10 /* FactoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB10662B265F1000D0DC10 /* FactoUITestsLaunchTests.swift */; };
 		83BB10DC2B2662FC00D0DC10 /* FactoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB10652B265F1000D0DC10 /* FactoUITests.swift */; };
 		83BECBA729C85F720053ECE0 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 83BECBA629C85F720053ECE0 /* Lottie */; };
-		83DEB3D32B34A9D0007CEB1B /* FactoMiniApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DEB3D22B34A9D0007CEB1B /* FactoMiniApp.swift */; };
-		83DEB3D52B34A9D0007CEB1B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DEB3D42B34A9D0007CEB1B /* ContentView.swift */; };
-		83DEB3D72B34A9D1007CEB1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83DEB3D62B34A9D1007CEB1B /* Assets.xcassets */; };
-		83DEB3DA2B34A9D1007CEB1B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83DEB3D92B34A9D1007CEB1B /* Preview Assets.xcassets */; };
-		83DEB3E42B34A9D1007CEB1B /* FactoMini_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DEB3E32B34A9D1007CEB1B /* FactoMini_Watch_AppTests.swift */; };
-		83DEB3EE2B34A9D1007CEB1B /* FactoMini_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DEB3ED2B34A9D1007CEB1B /* FactoMini_Watch_AppUITests.swift */; };
-		83DEB3F02B34A9D1007CEB1B /* FactoMini_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DEB3EF2B34A9D1007CEB1B /* FactoMini_Watch_AppUITestsLaunchTests.swift */; };
-		83DEB3F32B34A9D1007CEB1B /* FactoMini Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 83DEB3D02B34A9D0007CEB1B /* FactoMini Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,42 +72,7 @@
 			remoteGlobalIDString = 832760352986E54D00DB56B7;
 			remoteInfo = TimePass;
 		};
-		83DEB3E02B34A9D1007CEB1B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8327602E2986E54D00DB56B7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 83DEB3CF2B34A9D0007CEB1B;
-			remoteInfo = "FactoMini Watch App";
-		};
-		83DEB3EA2B34A9D1007CEB1B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8327602E2986E54D00DB56B7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 83DEB3CF2B34A9D0007CEB1B;
-			remoteInfo = "FactoMini Watch App";
-		};
-		83DEB3F12B34A9D1007CEB1B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8327602E2986E54D00DB56B7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 83DEB3CF2B34A9D0007CEB1B;
-			remoteInfo = "FactoMini Watch App";
-		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		83DEB3F42B34A9D1007CEB1B /* Embed Watch Content */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
-			dstSubfolderSpec = 16;
-			files = (
-				83DEB3F32B34A9D1007CEB1B /* FactoMini Watch App.app in Embed Watch Content */,
-			);
-			name = "Embed Watch Content";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		832760362986E54D00DB56B7 /* Facto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Facto.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -169,16 +126,6 @@
 		83BB10652B265F1000D0DC10 /* FactoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoUITests.swift; sourceTree = "<group>"; };
 		83BB10662B265F1000D0DC10 /* FactoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		83BB10A42B2661A100D0DC10 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		83DEB3D02B34A9D0007CEB1B /* FactoMini Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FactoMini Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		83DEB3D22B34A9D0007CEB1B /* FactoMiniApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoMiniApp.swift; sourceTree = "<group>"; };
-		83DEB3D42B34A9D0007CEB1B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		83DEB3D62B34A9D1007CEB1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		83DEB3D92B34A9D1007CEB1B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		83DEB3DF2B34A9D1007CEB1B /* FactoMini Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FactoMini Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		83DEB3E32B34A9D1007CEB1B /* FactoMini_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoMini_Watch_AppTests.swift; sourceTree = "<group>"; };
-		83DEB3E92B34A9D1007CEB1B /* FactoMini Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FactoMini Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		83DEB3ED2B34A9D1007CEB1B /* FactoMini_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoMini_Watch_AppUITests.swift; sourceTree = "<group>"; };
-		83DEB3EF2B34A9D1007CEB1B /* FactoMini_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoMini_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,27 +151,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		83DEB3CD2B34A9D0007CEB1B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		83DEB3DC2B34A9D1007CEB1B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		83DEB3E62B34A9D1007CEB1B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -234,9 +160,6 @@
 				83BB10262B265EC200D0DC10 /* Facto */,
 				83BB105A2B265F1000D0DC10 /* FactoTests */,
 				83BB10642B265F1000D0DC10 /* FactoUITests */,
-				83DEB3D12B34A9D0007CEB1B /* FactoMini Watch App */,
-				83DEB3E22B34A9D1007CEB1B /* FactoMini Watch AppTests */,
-				83DEB3EC2B34A9D1007CEB1B /* FactoMini Watch AppUITests */,
 				832760372986E54D00DB56B7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -247,9 +170,6 @@
 				832760362986E54D00DB56B7 /* Facto.app */,
 				832760462986E54F00DB56B7 /* FactoTests.xctest */,
 				832760502986E54F00DB56B7 /* FactoUITests.xctest */,
-				83DEB3D02B34A9D0007CEB1B /* FactoMini Watch App.app */,
-				83DEB3DF2B34A9D1007CEB1B /* FactoMini Watch AppTests.xctest */,
-				83DEB3E92B34A9D1007CEB1B /* FactoMini Watch AppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -435,42 +355,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		83DEB3D12B34A9D0007CEB1B /* FactoMini Watch App */ = {
-			isa = PBXGroup;
-			children = (
-				83DEB3D22B34A9D0007CEB1B /* FactoMiniApp.swift */,
-				83DEB3D42B34A9D0007CEB1B /* ContentView.swift */,
-				83DEB3D62B34A9D1007CEB1B /* Assets.xcassets */,
-				83DEB3D82B34A9D1007CEB1B /* Preview Content */,
-			);
-			path = "FactoMini Watch App";
-			sourceTree = "<group>";
-		};
-		83DEB3D82B34A9D1007CEB1B /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				83DEB3D92B34A9D1007CEB1B /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		83DEB3E22B34A9D1007CEB1B /* FactoMini Watch AppTests */ = {
-			isa = PBXGroup;
-			children = (
-				83DEB3E32B34A9D1007CEB1B /* FactoMini_Watch_AppTests.swift */,
-			);
-			path = "FactoMini Watch AppTests";
-			sourceTree = "<group>";
-		};
-		83DEB3EC2B34A9D1007CEB1B /* FactoMini Watch AppUITests */ = {
-			isa = PBXGroup;
-			children = (
-				83DEB3ED2B34A9D1007CEB1B /* FactoMini_Watch_AppUITests.swift */,
-				83DEB3EF2B34A9D1007CEB1B /* FactoMini_Watch_AppUITestsLaunchTests.swift */,
-			);
-			path = "FactoMini Watch AppUITests";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -481,12 +365,10 @@
 				832760322986E54D00DB56B7 /* Sources */,
 				832760332986E54D00DB56B7 /* Frameworks */,
 				832760342986E54D00DB56B7 /* Resources */,
-				83DEB3F42B34A9D1007CEB1B /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				83DEB3F22B34A9D1007CEB1B /* PBXTargetDependency */,
 			);
 			name = Facto;
 			packageProductDependencies = (
@@ -532,59 +414,6 @@
 			productReference = 832760502986E54F00DB56B7 /* FactoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		83DEB3CF2B34A9D0007CEB1B /* FactoMini Watch App */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 83DEB3FB2B34A9D1007CEB1B /* Build configuration list for PBXNativeTarget "FactoMini Watch App" */;
-			buildPhases = (
-				83DEB3CC2B34A9D0007CEB1B /* Sources */,
-				83DEB3CD2B34A9D0007CEB1B /* Frameworks */,
-				83DEB3CE2B34A9D0007CEB1B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "FactoMini Watch App";
-			productName = "FactoMini Watch App";
-			productReference = 83DEB3D02B34A9D0007CEB1B /* FactoMini Watch App.app */;
-			productType = "com.apple.product-type.application";
-		};
-		83DEB3DE2B34A9D1007CEB1B /* FactoMini Watch AppTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 83DEB3FC2B34A9D1007CEB1B /* Build configuration list for PBXNativeTarget "FactoMini Watch AppTests" */;
-			buildPhases = (
-				83DEB3DB2B34A9D1007CEB1B /* Sources */,
-				83DEB3DC2B34A9D1007CEB1B /* Frameworks */,
-				83DEB3DD2B34A9D1007CEB1B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				83DEB3E12B34A9D1007CEB1B /* PBXTargetDependency */,
-			);
-			name = "FactoMini Watch AppTests";
-			productName = "FactoMini Watch AppTests";
-			productReference = 83DEB3DF2B34A9D1007CEB1B /* FactoMini Watch AppTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		83DEB3E82B34A9D1007CEB1B /* FactoMini Watch AppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 83DEB3FD2B34A9D1007CEB1B /* Build configuration list for PBXNativeTarget "FactoMini Watch AppUITests" */;
-			buildPhases = (
-				83DEB3E52B34A9D1007CEB1B /* Sources */,
-				83DEB3E62B34A9D1007CEB1B /* Frameworks */,
-				83DEB3E72B34A9D1007CEB1B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				83DEB3EB2B34A9D1007CEB1B /* PBXTargetDependency */,
-			);
-			name = "FactoMini Watch AppUITests";
-			productName = "FactoMini Watch AppUITests";
-			productReference = 83DEB3E92B34A9D1007CEB1B /* FactoMini Watch AppUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -592,7 +421,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1510;
+				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					832760352986E54D00DB56B7 = {
@@ -605,17 +434,6 @@
 					8327604F2986E54F00DB56B7 = {
 						CreatedOnToolsVersion = 14.2;
 						TestTargetID = 832760352986E54D00DB56B7;
-					};
-					83DEB3CF2B34A9D0007CEB1B = {
-						CreatedOnToolsVersion = 15.1;
-					};
-					83DEB3DE2B34A9D1007CEB1B = {
-						CreatedOnToolsVersion = 15.1;
-						TestTargetID = 83DEB3CF2B34A9D0007CEB1B;
-					};
-					83DEB3E82B34A9D1007CEB1B = {
-						CreatedOnToolsVersion = 15.1;
-						TestTargetID = 83DEB3CF2B34A9D0007CEB1B;
 					};
 				};
 			};
@@ -638,9 +456,6 @@
 				832760352986E54D00DB56B7 /* Facto */,
 				832760452986E54F00DB56B7 /* FactoTests */,
 				8327604F2986E54F00DB56B7 /* FactoUITests */,
-				83DEB3CF2B34A9D0007CEB1B /* FactoMini Watch App */,
-				83DEB3DE2B34A9D1007CEB1B /* FactoMini Watch AppTests */,
-				83DEB3E82B34A9D1007CEB1B /* FactoMini Watch AppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -667,29 +482,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		8327604E2986E54F00DB56B7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		83DEB3CE2B34A9D0007CEB1B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				83DEB3DA2B34A9D1007CEB1B /* Preview Assets.xcassets in Resources */,
-				83DEB3D72B34A9D1007CEB1B /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		83DEB3DD2B34A9D1007CEB1B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		83DEB3E72B34A9D1007CEB1B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -761,32 +553,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		83DEB3CC2B34A9D0007CEB1B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				83DEB3D52B34A9D0007CEB1B /* ContentView.swift in Sources */,
-				83DEB3D32B34A9D0007CEB1B /* FactoMiniApp.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		83DEB3DB2B34A9D1007CEB1B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				83DEB3E42B34A9D1007CEB1B /* FactoMini_Watch_AppTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		83DEB3E52B34A9D1007CEB1B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				83DEB3EE2B34A9D1007CEB1B /* FactoMini_Watch_AppUITests.swift in Sources */,
-				83DEB3F02B34A9D1007CEB1B /* FactoMini_Watch_AppUITestsLaunchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -799,21 +565,6 @@
 			isa = PBXTargetDependency;
 			target = 832760352986E54D00DB56B7 /* Facto */;
 			targetProxy = 832760512986E54F00DB56B7 /* PBXContainerItemProxy */;
-		};
-		83DEB3E12B34A9D1007CEB1B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 83DEB3CF2B34A9D0007CEB1B /* FactoMini Watch App */;
-			targetProxy = 83DEB3E02B34A9D1007CEB1B /* PBXContainerItemProxy */;
-		};
-		83DEB3EB2B34A9D1007CEB1B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 83DEB3CF2B34A9D0007CEB1B /* FactoMini Watch App */;
-			targetProxy = 83DEB3EA2B34A9D1007CEB1B /* PBXContainerItemProxy */;
-		};
-		83DEB3F22B34A9D1007CEB1B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 83DEB3CF2B34A9D0007CEB1B /* FactoMini Watch App */;
-			targetProxy = 83DEB3F12B34A9D1007CEB1B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -935,7 +686,6 @@
 		8327605B2986E54F00DB56B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -966,7 +716,6 @@
 		8327605C2986E54F00DB56B7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -1072,177 +821,6 @@
 			};
 			name = Release;
 		};
-		83DEB3F52B34A9D1007CEB1B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"FactoMini Watch App/Preview Content\"";
-				DEVELOPMENT_TEAM = 875PK3UBV5;
-				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = FactoMini;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.santagurung.Facto;
-				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.santagurung.Facto.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 10.2;
-			};
-			name = Debug;
-		};
-		83DEB3F62B34A9D1007CEB1B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"FactoMini Watch App/Preview Content\"";
-				DEVELOPMENT_TEAM = 875PK3UBV5;
-				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = FactoMini;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.santagurung.Facto;
-				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.santagurung.Facto.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 10.2;
-			};
-			name = Release;
-		};
-		83DEB3F72B34A9D1007CEB1B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 875PK3UBV5;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GENERATE_INFOPLIST_FILE = YES;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.santagurung.FactoMini-Watch-AppTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FactoMini Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FactoMini Watch App";
-				WATCHOS_DEPLOYMENT_TARGET = 10.2;
-			};
-			name = Debug;
-		};
-		83DEB3F82B34A9D1007CEB1B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 875PK3UBV5;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GENERATE_INFOPLIST_FILE = YES;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.santagurung.FactoMini-Watch-AppTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FactoMini Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FactoMini Watch App";
-				WATCHOS_DEPLOYMENT_TARGET = 10.2;
-			};
-			name = Release;
-		};
-		83DEB3F92B34A9D1007CEB1B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 875PK3UBV5;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GENERATE_INFOPLIST_FILE = YES;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.santagurung.FactoMini-Watch-AppUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				TEST_TARGET_NAME = "FactoMini Watch App";
-				WATCHOS_DEPLOYMENT_TARGET = 10.2;
-			};
-			name = Debug;
-		};
-		83DEB3FA2B34A9D1007CEB1B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 875PK3UBV5;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GENERATE_INFOPLIST_FILE = YES;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.santagurung.FactoMini-Watch-AppUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				TEST_TARGET_NAME = "FactoMini Watch App";
-				WATCHOS_DEPLOYMENT_TARGET = 10.2;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1278,33 +856,6 @@
 			buildConfigurations = (
 				832760612986E54F00DB56B7 /* Debug */,
 				832760622986E54F00DB56B7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		83DEB3FB2B34A9D1007CEB1B /* Build configuration list for PBXNativeTarget "FactoMini Watch App" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				83DEB3F52B34A9D1007CEB1B /* Debug */,
-				83DEB3F62B34A9D1007CEB1B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		83DEB3FC2B34A9D1007CEB1B /* Build configuration list for PBXNativeTarget "FactoMini Watch AppTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				83DEB3F72B34A9D1007CEB1B /* Debug */,
-				83DEB3F82B34A9D1007CEB1B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		83DEB3FD2B34A9D1007CEB1B /* Build configuration list for PBXNativeTarget "FactoMini Watch AppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				83DEB3F92B34A9D1007CEB1B /* Debug */,
-				83DEB3FA2B34A9D1007CEB1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

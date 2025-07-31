@@ -33,14 +33,13 @@ struct FavouritesView: View {
                 } else {
                     List {
                         ForEach(viewModel.facts ?? []) { fact in
-                            Section {
-                                Text(fact.text)
-                                    .font(.custom("AmericanTypewriter", size: 22))
-                            }
+                            Text(fact.text)
+                                .font(.custom("AmericanTypewriter", size: 22))
                         }
                         .onDelete(perform: deleteFact(offsets:))
                     }
-//                    .animation(.default, value: viewModel.facts)
+                    .listRowSpacing(12)
+                    .animation(.default, value: viewModel.facts)
                 }
             }
             .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "Search your favourites")
@@ -53,17 +52,12 @@ struct FavouritesView: View {
             }
             .navigationTitle("Favourites")
             .navigationBarTitleDisplayMode(.inline)
-//            .toolbar {
-//                ColorModeButton()
-//            }
         }
     }
 
     private func deleteFact(offsets: IndexSet) {
-        withAnimation {
-            let factsToDelete = offsets.compactMap { viewModel.facts?[$0] }
-            factsToDelete.forEach { viewModel.removeFact(fact: $0) }
-        }
+        let factsToDelete = offsets.compactMap { viewModel.facts?[$0] }
+        factsToDelete.forEach { viewModel.removeFact(fact: $0) }
     }
 }
 //

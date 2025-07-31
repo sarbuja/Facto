@@ -6,14 +6,10 @@ protocol SaveFactUseCase {
 
 struct SaveToFavouritesUseCaseImplementation: SaveFactUseCase {
 
-    let saveFactRepository: SaveFactRepository
-
-    init(repository: SaveFactRepository) {
-        saveFactRepository = repository
-    }
+    let factRepository: FactRepository
 
     func saveFactToFavourites(fact: Fact) throws {
-        try saveFactRepository.saveToFavourites(fact: fact)
+        try factRepository.saveToFavourites(fact: fact)
     }
 }
 

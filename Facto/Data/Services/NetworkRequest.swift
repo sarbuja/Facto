@@ -16,14 +16,8 @@ extension NetworkRequest {
 
 struct FactRequest: NetworkRequest {
 
-    let limit: Int
-
     var path: String {
         return "v1/facts"
-    }
-
-    var query: String? {
-        "limit=\(limit)"
     }
 
     func getUrlRequest() throws -> URLRequest {

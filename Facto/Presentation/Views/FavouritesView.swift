@@ -5,7 +5,7 @@ struct FavouritesView: View {
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
 
     @State private var searchText = ""
-    @StateObject var viewModel = FavouritesViewModel(localStore: FavouritesLocalStore())
+    @ObservedObject var viewModel: FavouritesViewModel
 
     private var lottieViewSize: CGFloat {
         if horizontalSizeClass == .compact {
@@ -17,7 +17,7 @@ struct FavouritesView: View {
 
     var body: some View {
         ZStack(alignment: .bottom) {
-            CustomColor.background
+            Color.primary
                 .ignoresSafeArea()
 
             Group {
@@ -40,6 +40,7 @@ struct FavouritesView: View {
                         }
                         .onDelete(perform: deleteFact(offsets:))
                     }
+//                    .animation(.default, value: viewModel.facts)
                 }
             }
             .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "Search your favourites")
@@ -52,23 +53,25 @@ struct FavouritesView: View {
             }
             .navigationTitle("Favourites")
             .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ColorModeButton()
-            }
+//            .toolbar {
+//                ColorModeButton()
+//            }
         }
     }
 
     private func deleteFact(offsets: IndexSet) {
-        let factsToDelete = offsets.compactMap { viewModel.facts?[$0] }
-        factsToDelete.forEach { viewModel.removeFact(fact: $0) }
-    }
-}
-
-struct FavouritesView_Previews: PreviewProvider {
-    static var previews: some View {
-        Group {
-            FavouritesView()
-            FavouritesView(viewModel: FavouritesViewModel(localStore: PreviewsFavouriteStore()))
+        withAnimation {
+            let factsToDelete = offsets.compactMap { viewModel.facts?[$0] }
+            factsToDelete.forEach { viewModel.removeFact(fact: $0) }
         }
     }
 }
+//
+//struct FavouritesView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        Group {
+//            FavouritesView()
+//            FavouritesView(viewModel: FavouritesViewModel(localStore: PreviewsFavouriteStore()))
+//        }
+//    }
+//}

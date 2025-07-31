@@ -15,7 +15,7 @@ final class FactRepositoryTest: XCTestCase {
     override func tearDown() {
         sut = nil
     }
-    
+
     func test_getFact_returns_fact() async {
         let fact = try! await sut.getFact()
 
@@ -24,7 +24,7 @@ final class FactRepositoryTest: XCTestCase {
 }
 
 final class FactServiceStub: FactService {
-    
+
     override func getFact() async throws -> Fact {
         return Fact(text: "test fact")
     }

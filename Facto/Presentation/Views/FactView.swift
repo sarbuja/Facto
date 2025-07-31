@@ -3,16 +3,11 @@ import SwiftUI
 struct FactView: View {
 
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
+    @EnvironmentObject var coordinator: Coordinator
 
+    @ObservedObject var viewModel: FactViewModel
     @State private var showAlert: Bool = false
-
-    @StateObject private var viewModel = {
-        let factService = FactService(sessionClient: URLSessionHttpClient())
-        let repository = FactRepositoryImplementation(factService: factService, localStore: FavouritesLocalStore())
-        let getFactUseCase = GetFactUseCaseImplementation(repository: repository)
-        let saveFactUseCase = SaveToFavouritesUseCaseImplementation(repository: repository)
-        return FactViewModel(getFactUseCase: getFactUseCase, saveFactUseCase: saveFactUseCase)
-    }()
+    @State private var isPresented: Bool = false
 
     private var lottieViewSize: CGFloat {
         if horizontalSizeClass == .compact {
@@ -21,11 +16,11 @@ struct FactView: View {
             return UIScreen.main.bounds.width * 0.5
         }
     }
-    
+
     var body: some View {
-        NavigationStack {
+        NavigationStack() {
             ZStack {
-                CustomColor.background
+                Color.primary
                     .ignoresSafeArea()
 
                 Group {
@@ -37,17 +32,12 @@ struct FactView: View {
                             Spacer()
                             Text(viewModel.fact?.text ?? "")
                                 .font(.custom("AmericanTypewriter", size: 40))
+                                .foregroundStyle(Color.white)
                                 .minimumScaleFactor(0.5)
                                 .multilineTextAlignment(.center)
                                 .padding(EdgeInsets(top: 0, leading: 24, bottom: 0, trailing: 24))
                             Spacer()
-                            HStack {
-                                Spacer()
-                                LoveFactButton(viewModel: viewModel)
-                                Spacer()
-                                NextFactButton(viewModel: viewModel)
-                                Spacer()
-                            }
+                            LoveFactButton(viewModel: viewModel)
                             Spacer()
                                 .frame(height: 20)
                         }
@@ -60,21 +50,14 @@ struct FactView: View {
                 }
                 .onReceive(viewModel.$errorMessage.dropFirst(), perform: { _ in
                     showAlert = true
+                    isPresented = true
                 })
-                .alert(
-                    "Something went wrong",
-                    isPresented: $showAlert,
-                    actions: {
-                        // Do nothing yet. Just close the alert dialog which is done by default.
-                    },
-                    message: {
-                        Text(viewModel.errorMessage)
-                    }
-                )
+                .customAlert(title: "OOPS", message: viewModel.errorMessage, isPresented: $isPresented)
                 .toolbar {
                     ToolbarItemGroup(placement: .navigationBarTrailing) {
-                        FavouritesButton()
-                        ColorModeButton()
+                        FavouritesButton {
+                            coordinator.pushToScreen(screen: .favourites)
+                        }
                     }
                 }
 
@@ -90,13 +73,21 @@ struct FactView: View {
                     .frame(width: lottieViewSize, height: lottieViewSize)
                 }
             }
+            .gesture(DragGesture()
+                .onEnded({ value in
+                    if value.translation.width < 0 {
+                        Task {
+                            await viewModel.getFact()
+                        }
+                    }
+                }))
         }
     }
 }
 
-struct FactView_Previews: PreviewProvider {
-    
-    static var previews: some View {
-        FactView()
-    }
-}
+//struct FactView_Previews: PreviewProvider {
+//
+//    static var previews: some View {
+//        FactView(coordinator: Coordinator(), viewModel: FactViewModel(getFactUseCase: <#any GetFactUseCase#>, saveFactUseCase: <#any SaveFactUseCase#>))
+//    }
+//}

@@ -6,14 +6,10 @@ protocol GetFactUseCase {
 
 struct GetFactUseCaseImplementation: GetFactUseCase {
 
-    let getFactRepository: GetFactRepository
-
-    init(repository: GetFactRepository) {
-        getFactRepository = repository
-    }
+    let factRepository: FactRepository
 
     func getFact() async throws -> Fact {
-        try await getFactRepository.getFact()
+        try await factRepository.getFact()
     }
 }
 

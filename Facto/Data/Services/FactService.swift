@@ -4,7 +4,7 @@ class FactService {
     let sessionClient: HttpClient
     let factRequest: FactRequest
 
-    init(sessionClient: HttpClient, factRequest: FactRequest = FactRequest(limit: 1)) {
+    init(sessionClient: HttpClient = URLSessionHttpClient(), factRequest: FactRequest = FactRequest()) {
         self.sessionClient = sessionClient
         self.factRequest = factRequest
     }
@@ -13,17 +13,13 @@ class FactService {
         do {
             let data = try await sessionClient.getResult(from: factRequest.getUrlRequest())
 
-            guard let facts = try? JSONDecoder().decode([FactDTO].self, from: data),
-                  let factDTO = facts.first else {
+            guard let facts = try? JSONDecoder().decode([Fact].self, from: data),
+                  let fact = facts.first else {
                 throw NetworkError.decodingError
             }
-            return getMappedModel(dto: factDTO)
+            return fact
         } catch NetworkError.statusError {
             throw NetworkError.statusError
         }
-    }
-
-    private func getMappedModel(dto: FactDTO) -> Fact {
-        return Fact(text: dto.fact)
     }
 }

@@ -3,7 +3,7 @@ import SwiftUI
 struct LoveFactButton: View {
 
     @ObservedObject var viewModel: FactViewModel
-    
+
     var body: some View {
         Button {
             do {

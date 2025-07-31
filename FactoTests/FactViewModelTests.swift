@@ -45,7 +45,7 @@ final class FactViewModelTests: XCTestCase {
 
     @MainActor
     func test_remove_fact() {
-        
+
     }
 }
 

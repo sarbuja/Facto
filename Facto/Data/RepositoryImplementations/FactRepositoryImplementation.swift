@@ -15,7 +15,7 @@ class FactRepositoryImplementation {
     }
 }
 
-extension FactRepositoryImplementation: GetFactRepository {
+extension FactRepositoryImplementation: FactRepository {
 
     func getFact() async throws -> Fact {
         do {
@@ -27,16 +27,10 @@ extension FactRepositoryImplementation: GetFactRepository {
             return fact
         }
     }
-}
-
-extension FactRepositoryImplementation: SaveFactRepository {
 
     func saveToFavourites(fact: Fact) throws {
         try localStore.addFactToFavourites(fact: fact)
     }
-}
-
-extension FactRepositoryImplementation: DeleteFactRepository {
 
     func deleteFavourite(fact: Fact) throws {
         try localStore.removeFactFromFavourites(fact: fact)

@@ -10,7 +10,7 @@ struct ColorModeButton: View {
             AppSettings.shared.theme = color == .light ? .dark : .light
         } label: {
             Image(systemName: "moonphase.first.quarter")
-                .foregroundColor(colorScheme == .dark ? .white : .black)
+                .foregroundStyle(.white)
         }
     }
 }

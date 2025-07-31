@@ -6,9 +6,9 @@ protocol DeleteFactUseCase {
 
 struct DeleteFavouriteUseCaseImplementation: DeleteFactUseCase {
 
-    let deleteFavouriteRepository: DeleteFactRepository
-    
+    let factRepository: FactRepository
+
     func deleteFavourite(fact: Fact) throws {
-        try deleteFavouriteRepository.deleteFavourite(fact: fact)
+        try factRepository.deleteFavourite(fact: fact)
     }
 }

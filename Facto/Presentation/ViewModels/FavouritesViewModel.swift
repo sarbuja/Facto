@@ -3,12 +3,14 @@ import Foundation
 @MainActor
 final class FavouritesViewModel: ObservableObject {
 
+    let deleteFactUseCase: DeleteFactUseCase
     private let localStore: LocalStore
     @Published var facts: [Fact]?
     @Published private(set) var errorMessage: String = ""
 
-    init(localStore: LocalStore) {
+    init(localStore: LocalStore, deleteFactUseCase: DeleteFactUseCase) {
         self.localStore = localStore
+        self.deleteFactUseCase = deleteFactUseCase
     }
 
     func getFacts() {
@@ -17,7 +19,7 @@ final class FavouritesViewModel: ObservableObject {
 
     func removeFact(fact: Fact) {
         do {
-            try localStore.removeFactFromFavourites(fact: fact)
+            try deleteFactUseCase.deleteFavourite(fact: fact)
             facts = localStore.storedFacts
         } catch {
             print(error.localizedDescription)

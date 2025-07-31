@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		838212882E3B7B4700FCA8B4 /* CoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838212872E3B7B4200FCA8B4 /* CoordinatorView.swift */; };
+		8382128A2E3B7B4E00FCA8B4 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838212892E3B7B4B00FCA8B4 /* Coordinator.swift */; };
+		8382128C2E3B7C9200FCA8B4 /* FactRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8382128B2E3B7C8C00FCA8B4 /* FactRepository.swift */; };
+		8382128E2E3B7D0E00FCA8B4 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8382128D2E3B7D0900FCA8B4 /* AlertView.swift */; };
+		838212902E3B7DED00FCA8B4 /* FactUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8382128F2E3B7DE600FCA8B4 /* FactUseCaseTest.swift */; };
 		83BB10A52B2661A100D0DC10 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83BB10A42B2661A100D0DC10 /* Preview Assets.xcassets */; };
 		83BB10A62B2661CA00D0DC10 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB10272B265EC200D0DC10 /* AppSettings.swift */; };
 		83BB10A72B2661F600D0DC10 /* not-found-lottie.json in Resources */ = {isa = PBXBuildFile; fileRef = 83BB102B2B265EC200D0DC10 /* not-found-lottie.json */; };
@@ -28,14 +33,10 @@
 		83BB10B72B26627C00D0DC10 /* FavouritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB10512B265EC200D0DC10 /* FavouritesViewModel.swift */; };
 		83BB10B82B26627C00D0DC10 /* FactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB10502B265EC200D0DC10 /* FactViewModel.swift */; };
 		83BB10B92B26628200D0DC10 /* Fact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB10452B265EC200D0DC10 /* Fact.swift */; };
-		83BB10BA2B26628700D0DC10 /* GetFactRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB10482B265EC200D0DC10 /* GetFactRepository.swift */; };
-		83BB10BB2B26628700D0DC10 /* SaveFactRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB10472B265EC200D0DC10 /* SaveFactRepository.swift */; };
-		83BB10BC2B26628700D0DC10 /* DeleteFactRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB10492B265EC200D0DC10 /* DeleteFactRepository.swift */; };
 		83BB10BD2B26628B00D0DC10 /* GetFactUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB104D2B265EC200D0DC10 /* GetFactUseCase.swift */; };
 		83BB10BE2B26628B00D0DC10 /* SaveFactUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB104C2B265EC200D0DC10 /* SaveFactUseCase.swift */; };
 		83BB10BF2B26628B00D0DC10 /* DeleteFactUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB104B2B265EC200D0DC10 /* DeleteFactUseCase.swift */; };
 		83BB10C02B26629800D0DC10 /* FavouritesLocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB10372B265EC200D0DC10 /* FavouritesLocalStore.swift */; };
-		83BB10C12B26629800D0DC10 /* FactDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB10382B265EC200D0DC10 /* FactDTO.swift */; };
 		83BB10C22B26629F00D0DC10 /* FactRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB103A2B265EC200D0DC10 /* FactRepositoryImplementation.swift */; };
 		83BB10C32B2662A400D0DC10 /* LocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB103C2B265EC200D0DC10 /* LocalStore.swift */; };
 		83BB10C42B2662A800D0DC10 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB10412B265EC200D0DC10 /* NetworkRequest.swift */; };
@@ -44,10 +45,7 @@
 		83BB10C72B2662A800D0DC10 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB10422B265EC200D0DC10 /* NetworkError.swift */; };
 		83BB10C82B2662A800D0DC10 /* FactService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB103E2B265EC200D0DC10 /* FactService.swift */; };
 		83BB10D22B2662F500D0DC10 /* FactViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB105C2B265F1000D0DC10 /* FactViewModelTests.swift */; };
-		83BB10D32B2662F500D0DC10 /* SaveFactUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB105E2B265F1000D0DC10 /* SaveFactUseCaseTest.swift */; };
 		83BB10D42B2662F500D0DC10 /* LocalStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB10612B265F1000D0DC10 /* LocalStorageTests.swift */; };
-		83BB10D52B2662F500D0DC10 /* GetFactUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB10632B265F1000D0DC10 /* GetFactUseCaseTest.swift */; };
-		83BB10D62B2662F500D0DC10 /* DeleteFactUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB10622B265F1000D0DC10 /* DeleteFactUseCaseTest.swift */; };
 		83BB10D72B2662F500D0DC10 /* FactRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB105B2B265F1000D0DC10 /* FactRepositoryTest.swift */; };
 		83BB10D82B2662F500D0DC10 /* HttpClientTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB105D2B265F1000D0DC10 /* HttpClientTest.swift */; };
 		83BB10D92B2662F500D0DC10 /* FactResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 83BB105F2B265F1000D0DC10 /* FactResponse.json */; };
@@ -78,6 +76,11 @@
 		832760362986E54D00DB56B7 /* Facto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Facto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		832760462986E54F00DB56B7 /* FactoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FactoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		832760502986E54F00DB56B7 /* FactoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FactoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		838212872E3B7B4200FCA8B4 /* CoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorView.swift; sourceTree = "<group>"; };
+		838212892E3B7B4B00FCA8B4 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		8382128B2E3B7C8C00FCA8B4 /* FactRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactRepository.swift; sourceTree = "<group>"; };
+		8382128D2E3B7D0900FCA8B4 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		8382128F2E3B7DE600FCA8B4 /* FactUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactUseCaseTest.swift; sourceTree = "<group>"; };
 		83BB10272B265EC200D0DC10 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		83BB10292B265EC200D0DC10 /* bulb-lottie.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "bulb-lottie.json"; sourceTree = "<group>"; };
 		83BB102A2B265EC200D0DC10 /* love-lottie.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "love-lottie.json"; sourceTree = "<group>"; };
@@ -90,7 +93,6 @@
 		83BB10342B265EC200D0DC10 /* CustomViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewModifiers.swift; sourceTree = "<group>"; };
 		83BB10352B265EC200D0DC10 /* FactoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoApp.swift; sourceTree = "<group>"; };
 		83BB10372B265EC200D0DC10 /* FavouritesLocalStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesLocalStore.swift; sourceTree = "<group>"; };
-		83BB10382B265EC200D0DC10 /* FactDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactDTO.swift; sourceTree = "<group>"; };
 		83BB103A2B265EC200D0DC10 /* FactRepositoryImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactRepositoryImplementation.swift; sourceTree = "<group>"; };
 		83BB103C2B265EC200D0DC10 /* LocalStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStore.swift; sourceTree = "<group>"; };
 		83BB103E2B265EC200D0DC10 /* FactService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactService.swift; sourceTree = "<group>"; };
@@ -99,9 +101,6 @@
 		83BB10412B265EC200D0DC10 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		83BB10422B265EC200D0DC10 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		83BB10452B265EC200D0DC10 /* Fact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fact.swift; sourceTree = "<group>"; };
-		83BB10472B265EC200D0DC10 /* SaveFactRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveFactRepository.swift; sourceTree = "<group>"; };
-		83BB10482B265EC200D0DC10 /* GetFactRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFactRepository.swift; sourceTree = "<group>"; };
-		83BB10492B265EC200D0DC10 /* DeleteFactRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteFactRepository.swift; sourceTree = "<group>"; };
 		83BB104B2B265EC200D0DC10 /* DeleteFactUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteFactUseCase.swift; sourceTree = "<group>"; };
 		83BB104C2B265EC200D0DC10 /* SaveFactUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveFactUseCase.swift; sourceTree = "<group>"; };
 		83BB104D2B265EC200D0DC10 /* GetFactUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFactUseCase.swift; sourceTree = "<group>"; };
@@ -117,12 +116,9 @@
 		83BB105B2B265F1000D0DC10 /* FactRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactRepositoryTest.swift; sourceTree = "<group>"; };
 		83BB105C2B265F1000D0DC10 /* FactViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactViewModelTests.swift; sourceTree = "<group>"; };
 		83BB105D2B265F1000D0DC10 /* HttpClientTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientTest.swift; sourceTree = "<group>"; };
-		83BB105E2B265F1000D0DC10 /* SaveFactUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveFactUseCaseTest.swift; sourceTree = "<group>"; };
 		83BB105F2B265F1000D0DC10 /* FactResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FactResponse.json; sourceTree = "<group>"; };
 		83BB10602B265F1000D0DC10 /* XCTest+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTest+Extension.swift"; sourceTree = "<group>"; };
 		83BB10612B265F1000D0DC10 /* LocalStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageTests.swift; sourceTree = "<group>"; };
-		83BB10622B265F1000D0DC10 /* DeleteFactUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteFactUseCaseTest.swift; sourceTree = "<group>"; };
-		83BB10632B265F1000D0DC10 /* GetFactUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFactUseCaseTest.swift; sourceTree = "<group>"; };
 		83BB10652B265F1000D0DC10 /* FactoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoUITests.swift; sourceTree = "<group>"; };
 		83BB10662B265F1000D0DC10 /* FactoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		83BB10A42B2661A100D0DC10 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -180,6 +176,8 @@
 				83BB102C2B265EC200D0DC10 /* Assets.xcassets */,
 				83BB10592B265EC200D0DC10 /* Info.plist */,
 				83BB10352B265EC200D0DC10 /* FactoApp.swift */,
+				838212872E3B7B4200FCA8B4 /* CoordinatorView.swift */,
+				838212892E3B7B4B00FCA8B4 /* Coordinator.swift */,
 				83BB10272B265EC200D0DC10 /* AppSettings.swift */,
 				83BB10362B265EC200D0DC10 /* Data */,
 				83BB10432B265EC200D0DC10 /* Domain */,
@@ -217,7 +215,6 @@
 			isa = PBXGroup;
 			children = (
 				83BB10372B265EC200D0DC10 /* FavouritesLocalStore.swift */,
-				83BB10382B265EC200D0DC10 /* FactDTO.swift */,
 				83BB10392B265EC200D0DC10 /* RepositoryImplementations */,
 				83BB103B2B265EC200D0DC10 /* Protocols */,
 				83BB103D2B265EC200D0DC10 /* Services */,
@@ -274,9 +271,7 @@
 		83BB10462B265EC200D0DC10 /* RepositoryInterfaces */ = {
 			isa = PBXGroup;
 			children = (
-				83BB10472B265EC200D0DC10 /* SaveFactRepository.swift */,
-				83BB10482B265EC200D0DC10 /* GetFactRepository.swift */,
-				83BB10492B265EC200D0DC10 /* DeleteFactRepository.swift */,
+				8382128B2E3B7C8C00FCA8B4 /* FactRepository.swift */,
 			);
 			path = RepositoryInterfaces;
 			sourceTree = "<group>";
@@ -312,6 +307,7 @@
 		83BB10522B265EC200D0DC10 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8382128D2E3B7D0900FCA8B4 /* AlertView.swift */,
 				83BB10532B265EC200D0DC10 /* LoveFactButton.swift */,
 				83BB10542B265EC200D0DC10 /* FavouritesView.swift */,
 				83BB10552B265EC200D0DC10 /* ColorModeButton.swift */,
@@ -325,15 +321,13 @@
 		83BB105A2B265F1000D0DC10 /* FactoTests */ = {
 			isa = PBXGroup;
 			children = (
+				8382128F2E3B7DE600FCA8B4 /* FactUseCaseTest.swift */,
 				83BB105B2B265F1000D0DC10 /* FactRepositoryTest.swift */,
 				83BB105C2B265F1000D0DC10 /* FactViewModelTests.swift */,
 				83BB105D2B265F1000D0DC10 /* HttpClientTest.swift */,
-				83BB105E2B265F1000D0DC10 /* SaveFactUseCaseTest.swift */,
 				83BB105F2B265F1000D0DC10 /* FactResponse.json */,
 				83BB10602B265F1000D0DC10 /* XCTest+Extension.swift */,
 				83BB10612B265F1000D0DC10 /* LocalStorageTests.swift */,
-				83BB10622B265F1000D0DC10 /* DeleteFactUseCaseTest.swift */,
-				83BB10632B265F1000D0DC10 /* GetFactUseCaseTest.swift */,
 			);
 			path = FactoTests;
 			sourceTree = "<group>";
@@ -499,21 +493,21 @@
 				83BB10AD2B26626000D0DC10 /* CustomViewModifiers.swift in Sources */,
 				83BB10C62B2662A800D0DC10 /* HttpClient.swift in Sources */,
 				83BB10BD2B26628B00D0DC10 /* GetFactUseCase.swift in Sources */,
+				8382128E2E3B7D0E00FCA8B4 /* AlertView.swift in Sources */,
 				83BB10C52B2662A800D0DC10 /* URLSessionHttpClient.swift in Sources */,
 				83BB10C32B2662A400D0DC10 /* LocalStore.swift in Sources */,
 				83BB10B02B26626000D0DC10 /* ViewExtensions.swift in Sources */,
 				83BB10BE2B26628B00D0DC10 /* SaveFactUseCase.swift in Sources */,
-				83BB10BC2B26628700D0DC10 /* DeleteFactRepository.swift in Sources */,
 				83BB10C72B2662A800D0DC10 /* NetworkError.swift in Sources */,
 				83BB10C02B26629800D0DC10 /* FavouritesLocalStore.swift in Sources */,
 				83BB10B92B26628200D0DC10 /* Fact.swift in Sources */,
 				83BB10B82B26627C00D0DC10 /* FactViewModel.swift in Sources */,
 				83BB10A62B2661CA00D0DC10 /* AppSettings.swift in Sources */,
-				83BB10BA2B26628700D0DC10 /* GetFactRepository.swift in Sources */,
+				838212882E3B7B4700FCA8B4 /* CoordinatorView.swift in Sources */,
 				83BB10B72B26627C00D0DC10 /* FavouritesViewModel.swift in Sources */,
+				8382128A2E3B7B4E00FCA8B4 /* Coordinator.swift in Sources */,
 				83BB10C82B2662A800D0DC10 /* FactService.swift in Sources */,
-				83BB10BB2B26628700D0DC10 /* SaveFactRepository.swift in Sources */,
-				83BB10C12B26629800D0DC10 /* FactDTO.swift in Sources */,
+				8382128C2E3B7C9200FCA8B4 /* FactRepository.swift in Sources */,
 				83BB10C22B26629F00D0DC10 /* FactRepositoryImplementation.swift in Sources */,
 				83BB10AA2B26620F00D0DC10 /* FactoApp.swift in Sources */,
 				83BB10B42B26627700D0DC10 /* FavouritesView.swift in Sources */,
@@ -533,12 +527,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83BB10D62B2662F500D0DC10 /* DeleteFactUseCaseTest.swift in Sources */,
-				83BB10D32B2662F500D0DC10 /* SaveFactUseCaseTest.swift in Sources */,
 				83BB10D22B2662F500D0DC10 /* FactViewModelTests.swift in Sources */,
-				83BB10D52B2662F500D0DC10 /* GetFactUseCaseTest.swift in Sources */,
 				83BB10DA2B2662F500D0DC10 /* XCTest+Extension.swift in Sources */,
 				83BB10D42B2662F500D0DC10 /* LocalStorageTests.swift in Sources */,
+				838212902E3B7DED00FCA8B4 /* FactUseCaseTest.swift in Sources */,
 				83BB10D82B2662F500D0DC10 /* HttpClientTest.swift in Sources */,
 				83BB10D72B2662F500D0DC10 /* FactRepositoryTest.swift in Sources */,
 			);

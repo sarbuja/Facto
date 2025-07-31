@@ -18,7 +18,7 @@ struct ViewDidLoadModifier: ViewModifier {
 
 struct CustomAlertModifier: ViewModifier {
 
-    let title: String?
+    let title: String
     let message: String
     let action: (() -> Void)?
 
@@ -42,7 +42,6 @@ struct CustomAlertModifier: ViewModifier {
                         }
                     }
                 })
-                .clipShape(RoundedRectangle(cornerRadius: 8))
                 .scaleEffect(showAlert ? 1 : 0.8)
                 .opacity(showAlert ? 1 : 0)
                 .animation(.spring(response: 0.4, dampingFraction: 0.6), value: showAlert)

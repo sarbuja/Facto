@@ -1,4 +1,5 @@
 import SwiftUI
+import RswiftResources
 import Lottie
 
 struct LottieView: UIViewRepresentable {
@@ -8,10 +9,13 @@ struct LottieView: UIViewRepresentable {
     let action: (() -> Void)?
     let animationView = LottieAnimationView()
 
-    init(lottieFile: String,
+    init?(resource: FileResource,
          mode: LottieLoopMode = .loop,
          action: (() -> Void)? = nil) {
-        self.lottieFile = lottieFile
+        guard let url = resource.url() else {
+            return nil
+        }
+        self.lottieFile = url.path
         self.mode = mode
         self.action = action
     }
@@ -19,7 +23,7 @@ struct LottieView: UIViewRepresentable {
     func makeUIView(context: Context) -> UIView {
         let view = UIView(frame: .zero)
 
-        animationView.animation = LottieAnimation.named(lottieFile)
+        animationView.animation = LottieAnimation.filepath(lottieFile)
         animationView.contentMode = .scaleAspectFit
         animationView.loopMode = mode
         animationView.play { _ in

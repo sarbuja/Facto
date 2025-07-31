@@ -2,38 +2,61 @@ import SwiftUI
 
 struct AlertView: View {
 
-    let title: String?
+    let title: String
     let message: String
     @Binding var isPresented: Bool
     let action: (() -> Void)?
 
     var body: some View {
-        VStack(spacing: 10) {
-            if let title {
+        ZStack {
+            CustomBackgroundView()
+
+            VStack {
+                Spacer()
                 Text(title)
-                    .foregroundStyle(.white)
-                    .font(.custom("AmericanTypewriter", size: 40))
+                    .fontWeight(.black)
+                    .font(.system(size: 52))
+                    .foregroundStyle(.gray)
+
+                Text(message)
+                    .fontWeight(.semibold)
+                    .foregroundStyle(.gray)
+
+                Spacer()
+
+                Button {
+                    isPresented = false
+                    action?()
+                } label: {
+                    Text("OK")
+                        .fontWeight(.heavy)
+                        .foregroundStyle(.gray)
+                        .font(.system(.largeTitle))
+                }
+                Spacer()
             }
-
-            Text(message)
-                .foregroundStyle(.white)
-                .font(.custom("AmericanTypewriter", size: 20))
-
-            Spacer()
-                .frame(height: 20)
-
-            Button {
-                isPresented = false
-                action?()
-            } label: {
-                Text("OK")
-                    .foregroundStyle(.white)
-                    .font(.system(.largeTitle))
-            }
-
         }
-        .padding(20)
-        .background(Color.secondary)
+        .frame(width: 320, height: 250)
+    }
+}
+
+struct CustomBackgroundView: View {
+    var body: some View {
+        ZStack {
+            Color(R.color.greenDark)
+                .cornerRadius(40)
+                .offset(y: 12)
+
+            Color(R.color.greenLight)
+                .cornerRadius(40)
+                .offset(y: 3)
+                .opacity(0.85)
+
+            LinearGradient(colors: [Color(R.color.greenLight), Color(R.color.greenMedium)],
+                           startPoint: .top,
+                           endPoint: .bottom)
+            .cornerRadius(40)
+        }
     }
 }
 

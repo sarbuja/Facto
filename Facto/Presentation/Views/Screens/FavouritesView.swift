@@ -17,7 +17,7 @@ struct FavouritesView: View {
 
     var body: some View {
         ZStack(alignment: .bottom) {
-            Color.primary
+            Color(R.color.greenDefault)
                 .ignoresSafeArea()
 
             Group {
@@ -26,7 +26,7 @@ struct FavouritesView: View {
                         Spacer()
                         Text("No favourites")
                             .font(.custom("AmericanTypewriter", size: 22))
-                        LottieView(lottieFile: "not-found-lottie")
+                        LottieView(resource: R.file.notFoundLottieJson)
                             .frame(width: lottieViewSize, height: lottieViewSize)
                         Spacer()
                     }

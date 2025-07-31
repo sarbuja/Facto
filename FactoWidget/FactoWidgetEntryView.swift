@@ -1,5 +1,6 @@
 import WidgetKit
 import SwiftUI
+import RswiftResources
 
 struct FactoWidgetEntryView : View {
     var entry: Provider.Entry

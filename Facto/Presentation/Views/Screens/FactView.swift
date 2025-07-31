@@ -1,4 +1,5 @@
 import SwiftUI
+import RswiftResources
 
 struct FactView: View {
 
@@ -20,12 +21,12 @@ struct FactView: View {
     var body: some View {
         NavigationStack() {
             ZStack {
-                Color.primary
+                Color(R.color.greenDefault)
                     .ignoresSafeArea()
 
                 Group {
                     if viewModel.showLoading {
-                        LottieView(lottieFile: "bulb-lottie")
+                        LottieView(resource: R.file.bulbLottieJson)
                             .frame(width: lottieViewSize, height: lottieViewSize)
                     } else {
                         VStack {
@@ -64,7 +65,7 @@ struct FactView: View {
                 // Loving Animation
                 if viewModel.showFavouriting {
                     LottieView(
-                        lottieFile: "love-lottie",
+                        resource: R.file.loveLottieJson,
                         mode: .playOnce,
                         action: {
                             viewModel.showFavouriting = false

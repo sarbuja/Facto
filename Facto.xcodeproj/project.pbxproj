@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,15 @@
 		8382128C2E3B7C9200FCA8B4 /* FactRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8382128B2E3B7C8C00FCA8B4 /* FactRepository.swift */; };
 		8382128E2E3B7D0E00FCA8B4 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8382128D2E3B7D0900FCA8B4 /* AlertView.swift */; };
 		838212902E3B7DED00FCA8B4 /* FactUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8382128F2E3B7DE600FCA8B4 /* FactUseCaseTest.swift */; };
+		838212982E3B813D00FCA8B4 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838212972E3B813D00FCA8B4 /* WidgetKit.framework */; };
+		8382129A2E3B813D00FCA8B4 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838212992E3B813D00FCA8B4 /* SwiftUI.framework */; };
+		838212A72E3B813F00FCA8B4 /* FactoWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 838212952E3B813D00FCA8B4 /* FactoWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		838212B32E3B821E00FCA8B4 /* FactService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB103E2B265EC200D0DC10 /* FactService.swift */; };
+		838212B42E3B823800FCA8B4 /* URLSessionHttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB103F2B265EC200D0DC10 /* URLSessionHttpClient.swift */; };
+		838212B52E3B823F00FCA8B4 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB10422B265EC200D0DC10 /* NetworkError.swift */; };
+		838212B62E3B823F00FCA8B4 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB10412B265EC200D0DC10 /* NetworkRequest.swift */; };
+		838212B72E3B823F00FCA8B4 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB10402B265EC200D0DC10 /* HttpClient.swift */; };
+		838212B82E3B825000FCA8B4 /* Fact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB10452B265EC200D0DC10 /* Fact.swift */; };
 		83BB10A52B2661A100D0DC10 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83BB10A42B2661A100D0DC10 /* Preview Assets.xcassets */; };
 		83BB10A62B2661CA00D0DC10 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB10272B265EC200D0DC10 /* AppSettings.swift */; };
 		83BB10A72B2661F600D0DC10 /* not-found-lottie.json in Resources */ = {isa = PBXBuildFile; fileRef = 83BB102B2B265EC200D0DC10 /* not-found-lottie.json */; };
@@ -70,7 +79,28 @@
 			remoteGlobalIDString = 832760352986E54D00DB56B7;
 			remoteInfo = TimePass;
 		};
+		838212A52E3B813F00FCA8B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8327602E2986E54D00DB56B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 838212942E3B813D00FCA8B4;
+			remoteInfo = FactoWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		838212AC2E3B813F00FCA8B4 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				838212A72E3B813F00FCA8B4 /* FactoWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		832760362986E54D00DB56B7 /* Facto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Facto.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +111,9 @@
 		8382128B2E3B7C8C00FCA8B4 /* FactRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactRepository.swift; sourceTree = "<group>"; };
 		8382128D2E3B7D0900FCA8B4 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		8382128F2E3B7DE600FCA8B4 /* FactUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactUseCaseTest.swift; sourceTree = "<group>"; };
+		838212952E3B813D00FCA8B4 /* FactoWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FactoWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		838212972E3B813D00FCA8B4 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		838212992E3B813D00FCA8B4 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		83BB10272B265EC200D0DC10 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		83BB10292B265EC200D0DC10 /* bulb-lottie.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "bulb-lottie.json"; sourceTree = "<group>"; };
 		83BB102A2B265EC200D0DC10 /* love-lottie.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "love-lottie.json"; sourceTree = "<group>"; };
@@ -124,6 +157,20 @@
 		83BB10A42B2661A100D0DC10 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		838212A82E3B813F00FCA8B4 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 838212942E3B813D00FCA8B4 /* FactoWidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		8382129B2E3B813D00FCA8B4 /* FactoWidget */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (838212A82E3B813F00FCA8B4 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = FactoWidget; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
 		832760332986E54D00DB56B7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
@@ -147,6 +194,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		838212922E3B813D00FCA8B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8382129A2E3B813D00FCA8B4 /* SwiftUI.framework in Frameworks */,
+				838212982E3B813D00FCA8B4 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -156,6 +212,8 @@
 				83BB10262B265EC200D0DC10 /* Facto */,
 				83BB105A2B265F1000D0DC10 /* FactoTests */,
 				83BB10642B265F1000D0DC10 /* FactoUITests */,
+				8382129B2E3B813D00FCA8B4 /* FactoWidget */,
+				838212962E3B813D00FCA8B4 /* Frameworks */,
 				832760372986E54D00DB56B7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -166,8 +224,18 @@
 				832760362986E54D00DB56B7 /* Facto.app */,
 				832760462986E54F00DB56B7 /* FactoTests.xctest */,
 				832760502986E54F00DB56B7 /* FactoUITests.xctest */,
+				838212952E3B813D00FCA8B4 /* FactoWidgetExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		838212962E3B813D00FCA8B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				838212972E3B813D00FCA8B4 /* WidgetKit.framework */,
+				838212992E3B813D00FCA8B4 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		83BB10262B265EC200D0DC10 /* Facto */ = {
@@ -359,10 +427,12 @@
 				832760322986E54D00DB56B7 /* Sources */,
 				832760332986E54D00DB56B7 /* Frameworks */,
 				832760342986E54D00DB56B7 /* Resources */,
+				838212AC2E3B813F00FCA8B4 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				838212A62E3B813F00FCA8B4 /* PBXTargetDependency */,
 			);
 			name = Facto;
 			packageProductDependencies = (
@@ -408,6 +478,28 @@
 			productReference = 832760502986E54F00DB56B7 /* FactoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		838212942E3B813D00FCA8B4 /* FactoWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 838212A92E3B813F00FCA8B4 /* Build configuration list for PBXNativeTarget "FactoWidgetExtension" */;
+			buildPhases = (
+				838212912E3B813D00FCA8B4 /* Sources */,
+				838212922E3B813D00FCA8B4 /* Frameworks */,
+				838212932E3B813D00FCA8B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				8382129B2E3B813D00FCA8B4 /* FactoWidget */,
+			);
+			name = FactoWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = FactoWidgetExtension;
+			productReference = 838212952E3B813D00FCA8B4 /* FactoWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -415,8 +507,8 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1420;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
 				TargetAttributes = {
 					832760352986E54D00DB56B7 = {
 						CreatedOnToolsVersion = 14.2;
@@ -428,6 +520,9 @@
 					8327604F2986E54F00DB56B7 = {
 						CreatedOnToolsVersion = 14.2;
 						TestTargetID = 832760352986E54D00DB56B7;
+					};
+					838212942E3B813D00FCA8B4 = {
+						CreatedOnToolsVersion = 16.4;
 					};
 				};
 			};
@@ -450,6 +545,7 @@
 				832760352986E54D00DB56B7 /* Facto */,
 				832760452986E54F00DB56B7 /* FactoTests */,
 				8327604F2986E54F00DB56B7 /* FactoUITests */,
+				838212942E3B813D00FCA8B4 /* FactoWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -476,6 +572,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		8327604E2986E54F00DB56B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		838212932E3B813D00FCA8B4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -545,6 +648,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		838212912E3B813D00FCA8B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				838212B52E3B823F00FCA8B4 /* NetworkError.swift in Sources */,
+				838212B62E3B823F00FCA8B4 /* NetworkRequest.swift in Sources */,
+				838212B72E3B823F00FCA8B4 /* HttpClient.swift in Sources */,
+				838212B42E3B823800FCA8B4 /* URLSessionHttpClient.swift in Sources */,
+				838212B82E3B825000FCA8B4 /* Fact.swift in Sources */,
+				838212B32E3B821E00FCA8B4 /* FactService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -557,6 +673,11 @@
 			isa = PBXTargetDependency;
 			target = 832760352986E54D00DB56B7 /* Facto */;
 			targetProxy = 832760512986E54F00DB56B7 /* PBXContainerItemProxy */;
+		};
+		838212A62E3B813F00FCA8B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 838212942E3B813D00FCA8B4 /* FactoWidgetExtension */;
+			targetProxy = 838212A52E3B813F00FCA8B4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -595,6 +716,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 2F5CUZHNZT;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -655,6 +777,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 2F5CUZHNZT;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -683,7 +806,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Facto/Preview Content\"";
-				DEVELOPMENT_TEAM = 875PK3UBV5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Facto/Info.plist;
@@ -713,7 +835,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Facto/Preview Content\"";
-				DEVELOPMENT_TEAM = 875PK3UBV5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Facto/Info.plist;
@@ -738,11 +859,9 @@
 		8327605E2986E54F00DB56B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 875PK3UBV5;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
@@ -758,11 +877,9 @@
 		8327605F2986E54F00DB56B7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 875PK3UBV5;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
@@ -778,10 +895,8 @@
 		832760612986E54F00DB56B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 875PK3UBV5;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
@@ -797,10 +912,8 @@
 		832760622986E54F00DB56B7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 875PK3UBV5;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
@@ -810,6 +923,69 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = TimePass;
+			};
+			name = Release;
+		};
+		838212AA2E3B813F00FCA8B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FactoWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FactoWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.santagurung.Facto.FactoWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		838212AB2E3B813F00FCA8B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FactoWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FactoWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.santagurung.Facto.FactoWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -848,6 +1024,15 @@
 			buildConfigurations = (
 				832760612986E54F00DB56B7 /* Debug */,
 				832760622986E54F00DB56B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		838212A92E3B813F00FCA8B4 /* Build configuration list for PBXNativeTarget "FactoWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				838212AA2E3B813F00FCA8B4 /* Debug */,
+				838212AB2E3B813F00FCA8B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
